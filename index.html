@@ -13,6 +13,10 @@
     <meta name="description" content="This is a test for html "><!--This is a meta description tag:We can use this tag to give a description of our website , can use this to display the description on the search page -->
     <title>Bobby's Website</title>  <!--This is a title tag : It is the name of the tab in chrome -->
   </head>
+
+
+
+
   <body style="background-color:lightblue">
     <!-- This allows us to insert a header on the website , can have an index of 1-6 ,which decreases in size as we go down and 6 being the smallest we can go -->
     <h2>Bobby's Website </h2>
@@ -35,8 +39,172 @@
     <p style="color:blue;background-color:yellow">We are going to change the style and colour of this line</p>
 
 
+<!--Formatting -->
+    <header>
+    <nav> </nav>    <!--  <nav>:Used to store navigation informations -->
+    </header>
+
+    <main>
+    <article>    <!--<article>: This is an article tag:Used for articles like on a blog post  -->
+      <section>     <!--<section>: Used to partition tags, Here we are using as a achild of the article tag  -->
+        <h3> Header for section 1</h3>
+        Section 1
+      </section>
+      <section>
+        <h3>  Header for section 2  </h3>
+        Section2
+        <aside>   <!--<aside> : This is where like ads are the side section of a website -->
+
+        </aside>
+      </section>
+    </article>
+    </main>
+    <footer>
+    </footer>
+
+
+
+    <!--LINKS -->
+    <!--  <a href=___"https://___">   :This is binding a link to that variable , have to use  a      -->
+    <a href="https://www.google.com" target="_blank"><h1> Google's Homepage </h1> </a>
+    <!-- target=_blank Tells the browser that we want to open up this link in a new tab -->
+
+
+    <!--Linking to a local html file  -->
+    <a href="page2.html"> <h2>Page2</h2></a>
+
+
+
+    <!--If the html file is in the other directory -->
+    <!--In this case page3 is in dir1 folder -->
+    <a href="dir1/page3.html" target="_blank">   <h2>Page3</h2>  </a>
+
+
+
+    <!--Creating links to files on a website -->
+    <a href="rtx2.jpg" target="_blank">   <h2>rtx</h2>  </a>
+
+
+
+
+
+    <!--IMAGES-->
+    <img src="https://i.kym-cdn.com/entries/icons/original/000/010/843/ricardo.jpg" alt="Ricardo Milos "  />    <!--<img> :  For images we dont have a closing tag so we use  "" /> "" as the closing tag  -->
+
+    <!--Resizing Images -->
+    <img width="100"  height="100"  src="rtx2.jpg" alt="Ricardo Milos GPU" />
+
+
+
+    <!--VIDEOS/YOUTUBE -->
+    <!--LOCAL VIDEO  -->
+    <video src="https://youtu.be/-m8KNSznRq0" poster="rtx2.jpg"  controls autoplay loop ></video>
+
+    <!--YOUTUBE-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-m8KNSznRq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    <!--LISTS :Appear like bullet points -->
+    <ul><!--Unordered list  -->
+      <li> Apples </li><!-- >>List Items -->
+      <li> Oranges </li>
+      <li> Grapes </li>
+    </ul>
+
+    <ol type="A"><!--Ordered List : Previes with numbers , A=alphabetical, i=roman numerical , a =alphabetical no caps  -->
+      <li> Apples<ol>Green Apple </ol> </li>  <!--List in a list  -->
+      <li> Oranges </li>
+      <li> Grapes </li>
+    </ol>
+
+
+    <dl><!--Description List  -->
+      <dt>  Apples </dt><!--Description term-->
+      <dd>  - A type of fruit  </dd> <!--Describing the description term  -->
+    </dl>
+
+
+    <!--TABLES -->
+    <table>
+      <thead>   <!--<thead>:Header for  the table  -->
+        <caption>List of Numbers </caption>   <!-- <caption>  :Caption of a table -->
+        <tr><!--Table Row :One horizontal Row in the table -->
+          <th> Index 1   </th><!--Table Headers: The title of each column  -->
+          <th> Index 2   </th>
+          <th> Index 3   </th>
+
+          <td><!--Table data :Represents each column of a table -->  One </td>
+          <td>  Two </td>
+          <td>  Three </td>
+        </tr>
+      </thead>
+
+      <tbody>   <!--<tbody>:Body for the table -->
+        <!--\Definign a second Row-->
+        <tr>
+          <td colspan="3"> Four </td>
+          <td>  Five </td>
+          <td>  Six </td>
+        </tr>
+      </tbody>
+    </table >
+
+
+    <!--DIVS/SPANS -->
+    <!--Spans are in line container , while divs are block containers -->
+    <!--In line elements can sit right by each other  -->
+    <a href="#">link1</a>
+    <a href="#">link2</a>
+
+
+    <!--Block elements do not sit right next to each other-->
+    <p> Paragraph1    </p>
+    <p> Paragraph2    </p>
+
+    <span> span1 </span>
+    <span> span2 </span>
+    <div> div1 </div>
+    <div> div2 </div>
+
+
+    <!--INPUT/FORMS-->
+    <input type="text" value="Enter your username"/>
+    <input type="password" />   <!--This will blur the txt typed in -->
+
+    <!--A resizable txt area  -->
+    <textarea rows="3"  cols="3">
+    </textarea>
+
+    <!--Date type input-->
+    <input type="date" />
+    <input type="email" />
+    <input type="range" />
+    <input type="file" />
+    <input type="checkbox" />
+
+    <input name="button"  type="radio" /><!-- We cannot check 2 radio buttons at the same time if they have the same name -->
+    <input name="button" type="radio" />
+
+    <input type="submit" />
+
+    <!--FORMS-->
+    <form>  <input type="submit"/>  </form>
+
+
+
+    <!--IFRAMES : Display another website in out webpage-->
+    <iframe src="htt[://giraffeacademy.com" frameborder="0"> This txt will display if the user cannot view the iframe website  </iframe>
+
+
+    <!--METATAGS: Data about data -->
+    <meta name="description" content="Your Description">
+    <meta name="author" content="Bobby">
+    <meta name="keywords" content="HTML">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- Controls how wesbite is displayed on different devices-->
+
+
+
   </body>
 </html><!-- Ending tags-->
-
-
 <!-- -->
